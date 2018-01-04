@@ -1,0 +1,148 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ *= require_tree .
+ *= require_self
+ */
+
+ ._activity {
+    height: 100px;
+ }
+
+#my_modal {
+    display: none;
+    z-index: 100;
+    position: fixed;
+}
+
+#edit-close {
+    z-index: 40;
+    position: absolute;
+    left: 497px;
+}
+
+#background-wall {
+    z-index: 10;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.7;
+    display: none;
+}
+	
+body {
+	margin: 0;
+	padding: 0;
+	background: #edeef0;
+}
+
+
+
+#place_form {
+	position: absolute;
+    left: 30%;
+    top: 200px;
+    z-index: 50;
+    display: none;
+}
+
+
+
+#edit {
+	position: absolute;
+	top: 50px;
+	left: 60px;
+}
+
+a {
+	text-decoration: none;	
+	color: #000;
+}
+
+ #remove {
+	top: 50px;
+	left: 0;
+	position: absolute;
+}
+
+#new_post {
+	top: 100px;
+	left: 30%;
+	position: absolute;
+}
+
+ .post-textarea {
+ 	text-align: center;
+ 	padding-top: 100px;
+ 	position: relative;
+   	font-size: 15px;
+
+ }
+
+ .button{
+	position: absolute;
+    background-color: coral;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff;
+	font-family: 'Nunito', sans-serif !important;
+
+ }
+
+textarea {
+    resize: none;
+   	border-radius: 1px;
+   	border-color: #c3b7b7;
+	font-family: 'Nunito', sans-serif !important;
+	font-size: small;
+}
+
+.textarea {
+	position: relative;
+	  -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+}
+
+
+
+#close {
+	position: absolute;
+    left: 497px;
+    top: -1px;
+    z-index: 10;
+    font-size: 17px;
+}
+
+/* Styling  Wall Post  */
+
+.main {
+    padding-left: 383px;
+    padding-top: 70px;
+}
+
+.wall-post {
+   	border-radius: 1px;
+	text-align: left;
+	border: 1px solid #c3c3c3;
+	width: 510px;
+	height: 50px;
+	background-color: #ffffff;
+	position: relative;
+    top: 180px;
+    margin-bottom: 30px;
+}
+
+

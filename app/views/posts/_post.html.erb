@@ -1,0 +1,6 @@
+<div class="wall-post" id="post_<%= post.id %>"><%= post.text %>
+	<%= link_to 'remove', post_path(post.id), method: :delete, data: { confirm: 'Are you sure?' }, id: "remove", remote: true %>
+		<button style="top: 50px; left: 70px; position: absolute;" id="edit_<%= post.id %>">
+			Edit
+		</button>
+</div>

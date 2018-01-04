@@ -1,0 +1,5 @@
+<%= form_for @post, remote: true do |f| %>
+	<a id="close" href="javascript:void(0)" > &times</a>
+		<%= f.text_area :text, rows: '3' , cols: '70', placeholder: "О чем вы думаете?"  , class: "textarea" %>
+	<%= f.submit class: "button"  %> 
+<% end %>
